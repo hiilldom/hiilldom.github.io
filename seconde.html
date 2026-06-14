@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Seconde — Mathématiques au lycée</title>
+<style>
+  :root{
+    --navy:#1F3864;--navy-deep:#16284a;--red:#A52A2A;--orange:#E07B00;--green:#2E7D32;
+    --ink:#23272e;--paper:#FBFAF7;--line:#dfe3ea;--grid:#e8ebf1;
+    --ok:#2E7D32;--soon:#9aa3b2;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;color:var(--ink);background:var(--paper);line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1060px;margin:0 auto;padding:0 24px}
+  .ui{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+
+  header{background:var(--navy);color:#fff;position:sticky;top:0;z-index:50;border-bottom:3px solid #2E7D32}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:62px}
+  .brand{font-weight:700;font-size:1.16rem;display:flex;align-items:center;gap:10px}
+  .brand .mark{width:26px;height:26px;border-radius:5px;flex:none;
+    background:linear-gradient(var(--grid) 1px,transparent 1px) 0 0/7px 7px,linear-gradient(90deg,var(--grid) 1px,transparent 1px) 0 0/7px 7px,#fff;box-shadow:inset 0 0 0 2px #2E7D32}
+  .nav a.ui{color:#cdd6e6;text-decoration:none;font-size:.94rem;margin-left:22px;font-weight:500}
+  .nav a.ui:hover{color:#fff}
+
+  .lhead{background:#fff;border-bottom:1px solid var(--line)}
+  .crumb{font-family:-apple-system,sans-serif;font-size:.86rem;color:#7a8392;padding-top:22px}
+  .crumb a{color:#2E7D32;text-decoration:none;font-weight:600}
+  .crumb a:hover{text-decoration:underline}
+  .lhead-main{padding:14px 0 30px}
+  .lhead h1{font-size:2.4rem;color:var(--navy);font-weight:700;letter-spacing:-.01em;margin-bottom:8px}
+  .lhead .lead{color:#5c6470;font-size:1.06rem;max-width:60ch}
+  .lhead .prog{font-family:-apple-system,sans-serif;margin-top:16px;font-size:.88rem;color:#7a8392}
+  .lhead .prog b{color:#2E7D32;font-weight:700}
+  .barwrap{margin-top:8px;height:7px;background:#eef1f5;border-radius:4px;overflow:hidden;max-width:340px}
+  .bar{height:100%;background:#2E7D32;border-radius:4px;width:19%}
+
+  section{padding:40px 0 70px}
+  .chaplist{display:flex;flex-direction:column;gap:12px}
+  .chap{display:flex;align-items:stretch;gap:0;text-decoration:none;color:inherit;background:#fff;border:1px solid var(--line);border-radius:11px;overflow:hidden;transition:transform .13s,box-shadow .13s,border-color .13s}
+  .chap:hover{transform:translateX(4px);box-shadow:-5px 5px 0 rgba(31,56,100,.07);border-color:#c4cdde}
+  .chap.soon{opacity:.62;cursor:default}
+  .chap.soon:hover{transform:none;box-shadow:none;border-color:var(--line)}
+  .cnum{font-family:-apple-system,sans-serif;flex:none;width:54px;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:1.12rem;letter-spacing:.02em}
+  .cmain{flex:1;padding:15px 20px}
+  .ctop{display:flex;align-items:center;gap:12px;margin-bottom:3px}
+  .ctop h3{font-size:1.18rem;color:var(--navy);font-weight:700}
+  .cbadge{font-family:-apple-system,sans-serif;font-size:.66rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#fff;padding:3px 9px;border-radius:20px}
+  .cmain p{color:#5c6470;font-size:.95rem}
+  .cgo{font-family:-apple-system,sans-serif;align-self:center;padding:0 24px;color:#c4cdde;font-size:1.5rem}
+  .chap:hover .cgo{color:#2E7D32}
+
+  footer{background:var(--navy-deep);color:#8b97ad;padding:34px 0;font-family:-apple-system,sans-serif;font-size:.86rem;text-align:center}
+  footer a{color:#cdd6e6;text-decoration:none}
+
+  @media(max-width:820px){
+    .lhead h1{font-size:1.8rem}
+    .ctop{flex-wrap:wrap;gap:6px}
+    .nav a.ui{display:none}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <div class="brand"><span class="mark"></span> Mathématiques&nbsp;·&nbsp;Lycée</div>
+    <div>
+      <a href="index.html" class="ui">Accueil</a>
+      <a href="seconde.html" class="ui">Seconde</a>
+      <a href="premiere.html" class="ui">Première spé</a>
+      <a href="ressources.html" class="ui">Ressources</a>
+    </div>
+  </div>
+</header>
+
+<div class="lhead">
+  <div class="wrap">
+    <div class="crumb"><a href="index.html">Accueil</a> &nbsp;›&nbsp; Seconde</div>
+    <div class="lhead-main">
+      <h1>Seconde</h1>
+      <p class="lead">Les seize chapitres de l&#x27;année, dans l&#x27;ordre de la progression. Chaque chapitre réunira son cours, ses animations et ses exercices corrigés.</p>
+      <div class="prog">Progression du lycée Schoelcher · <b>3</b> chapitre(s) en ligne sur 16</div>
+      <div class="barwrap"><div class="bar"></div></div>
+    </div>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="chaplist">
+      <div aria-disabled="true" class="chap soon">
+        <span class="cnum" style="background:#2E7D32">01</span>
+        <div class="cmain">
+          <div class="ctop"><h3>Calcul littéral 1</h3><span class="cbadge" style="background:var(--soon)">À venir</span></div>
+          <p>Distributivité, identités remarquables, écriture fractionnaire</p>
+        </div>
+        <span class="cgo">·</span>
+      </div>
+      <div aria-disabled="true" class="chap soon">
+        <span class="cnum" style="background:#2E7D32">02</span>
+        <div class="cmain">
+          <div class="ctop"><h3>Nombres et calculs 1</h3><span class="cbadge" style="background:var(--soon)">À venir</span></div>
+          <p>Puissances entières relatives, racine carrée</p>
+        </div>
+        <span class="cgo">·</span>
+      </div>
+      <div aria-disabled="true" class="chap soon">
+        <span class="cnum" style="background:#2E7D32">03</span>
+        <div class="cmain">
+          <div class="ctop"><h3>Nombres et calculs 2</h3><span class="cbadge" style="background:var(--soon)">À venir</span></div>
+          <p>Ensembles de nombres, multiples, diviseurs, premiers</p>
+        </div>
+        <span class="cgo">·</span>
+      </div>
+      <div aria-disabled="true" class="chap soon">
+        <span class="cnum" style="background:#2E7D32">04</span>
+        <div class="cmain">
+          <div class="ctop"><h3>Intervalles, inégalités, inéquations</h3><span class="cbadge" style="background:var(--soon)">À venir</span></div>
+          <p>Intervalles, comparaison, valeur absolue</p>
+        </div>
+        <span class="cgo">·</span>
+      </div>
+      <a href="seconde-vecteurs-1.html" class="chap">
+        <span class="cnum" style="background:#2E7D32">05</span>
+        <div class="cmain">
+          <div class="ctop"><h3>Vecteurs sans repère 1</h3><span class="cbadge" style="background:var(--ok)">Disponible</span></div>
+          <p>Translations, vecteurs et parallélogramme</p>
+        </div>
+        <span class="cgo">→</span>
+      </a>
+      <div aria-disabled="true" class="chap soon">
+        <span class="cnum" style="background:#2E7D32">06</span>
+        <div class="cmain">
+          <div class="ctop"><h3>Calcul littéral 2</h3><span class="cbadge" style="background:var(--soon)">À venir</span></div>
+          <p>Équation produit nul, équation quotient</p>
+        </div>
+        <span class="cgo">·</span>
+      </div>
+      <div aria-disabled="true" class="chap soon">
+        <span class="cnum" style="background:#2E7D32">07</span>
+        <div class="cmain">
+          <div class="ctop"><h3>Généralités sur les fonctions</h3><span class="cbadge" style="background:var(--soon)">À venir</span></div>
+          <p>Notion de fonction, courbe, résolutions graphiques</p>
+        </div>
+        <span class="cgo">·</span>
+      </div>
+      <a href="seconde-vecteurs-2.html" class="chap">
+        <span class="cnum" style="background:#2E7D32">08</span>
+        <div class="cmain">
+          <div class="ctop"><h3>Vecteurs sans repère 2</h3><span class="cbadge" style="background:var(--ok)">Disponible</span></div>
+          <p>Somme, différence, produit par un réel, colinéarité</p>
+        </div>
+        <span class="cgo">→</span>
+      </a>
+      <div aria-disabled="true" class="chap soon">
+        <span class="cnum" style="background:#2E7D32">09</span>
+        <div class="cmain">
+          <div class="ctop"><h3>Fonctions de référence</h3><span class="cbadge" style="background:var(--soon)">À venir</span></div>
+          <p>Exemples de fonctions de référence, parité</p>
+        </div>
+        <span class="cgo">·</span>
+      </div>
+      <div aria-disabled="true" class="chap soon">
+        <span class="cnum" style="background:#2E7D32">10</span>
+        <div class="cmain">
+          <div class="ctop"><h3>Signe d&#x27;une fonction</h3><span class="cbadge" style="background:var(--soon)">À venir</span></div>
+          <p>Signe d&#x27;une affine, d&#x27;un produit, d&#x27;un quotient, inéquations</p>
+        </div>
+        <span class="cgo">·</span>
+      </div>
+      <a href="seconde-vecteurs-3.html" class="chap">
+        <span class="cnum" style="background:#2E7D32">11</span>
+        <div class="cmain">
+          <div class="ctop"><h3>Vecteurs et repère</h3><span class="cbadge" style="background:var(--ok)">Disponible</span></div>
+          <p>Base, repère, coordonnées, milieu, norme, colinéarité</p>
+        </div>
+        <span class="cgo">→</span>
+      </a>
+      <div aria-disabled="true" class="chap soon">
+        <span class="cnum" style="background:#2E7D32">12</span>
+        <div class="cmain">
+          <div class="ctop"><h3>Droites du plan et systèmes</h3><span class="cbadge" style="background:var(--soon)">À venir</span></div>
+          <p>Vecteur directeur, équations de droite, systèmes</p>
+        </div>
+        <span class="cgo">·</span>
+      </div>
+      <div aria-disabled="true" class="chap soon">
+        <span class="cnum" style="background:#2E7D32">13</span>
+        <div class="cmain">
+          <div class="ctop"><h3>Proportions et évolutions</h3><span class="cbadge" style="background:var(--soon)">À venir</span></div>
+          <p>Proportions, évolutions successives et réciproques</p>
+        </div>
+        <span class="cgo">·</span>
+      </div>
+      <div aria-disabled="true" class="chap soon">
+        <span class="cnum" style="background:#2E7D32">14</span>
+        <div class="cmain">
+          <div class="ctop"><h3>Variations et extremums</h3><span class="cbadge" style="background:var(--soon)">À venir</span></div>
+          <p>Variations, maximum, minimum, fonctions de référence</p>
+        </div>
+        <span class="cgo">·</span>
+      </div>
+      <div aria-disabled="true" class="chap soon">
+        <span class="cnum" style="background:#2E7D32">15</span>
+        <div class="cmain">
+          <div class="ctop"><h3>Statistiques descriptives</h3><span class="cbadge" style="background:var(--soon)">À venir</span></div>
+          <p>Moyenne, écart-type, quartiles, écart interquartile</p>
+        </div>
+        <span class="cgo">·</span>
+      </div>
+      <div aria-disabled="true" class="chap soon">
+        <span class="cnum" style="background:#2E7D32">16</span>
+        <div class="cmain">
+          <div class="ctop"><h3>Probabilités et échantillonnage</h3><span class="cbadge" style="background:var(--soon)">À venir</span></div>
+          <p>Loi de probabilité, événements, échantillon, simulation</p>
+        </div>
+        <span class="cgo">·</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">© 2026 · Mathématiques au lycée · <a href="index.html">Retour à l'accueil</a></div>
+</footer>
+
+</body>
+</html>

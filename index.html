@@ -138,10 +138,10 @@
   <div class="wrap nav">
     <div class="brand"><span class="mark"></span> Mathématiques&nbsp;·&nbsp;Lycée</div>
     <div class="nav-links">
-      <a href="#niveaux" class="ui">Niveaux</a>
-      <a href="#recentes" class="ui">Vidéos</a>
-      <a href="#" class="ui">À propos</a>
-      <a href="#" class="ui pill btn btn-primary" style="padding:8px 16px;margin-left:22px;">Chaîne YouTube</a>
+      <a href="seconde.html" class="ui">Seconde</a>
+      <a href="premiere.html" class="ui">Première</a>
+      <a href="ressources.html" class="ui">Ressources</a>
+      <a href="#" class="ui pill btn btn-primary" style="padding:8px 16px;margin-left:22px;">YouTube</a>
     </div>
   </div>
 </header>
@@ -170,27 +170,56 @@
     <div class="sec-head"><h2>Choisir un niveau</h2></div>
     <p class="sec-sub">Chaque niveau regroupe ses chapitres, avec pour chacun le cours, les animations et les exercices corrigés.</p>
     <div class="levels">
-      <a href="seconde-vecteurs.html" class="level">
+      <a href="seconde.html" class="level">
         <span class="edge" style="background:var(--green)"></span>
         <span class="tag" style="background:var(--green)">Lycée · Classe de 2ⁿᵈᵉ</span>
         <h3>Seconde</h3>
-        <p>Fonctions, vecteurs, statistiques, probabilités, algorithmique et Python.</p>
-        <div class="meta"><span><b>14</b> chapitres</span><span><b>60+</b> vidéos</span><span><b>40+</b> PDF</span></div>
+        <p>Vecteurs, fonctions, statistiques, probabilités, algorithmique et Python.</p>
+        <div class="meta"><span><b>16</b> chapitres</span><span><b>3</b> en ligne</span></div>
         <span class="arrow">→</span>
       </a>
-      <a href="#" class="level">
+      <a href="premiere.html" class="level">
         <span class="edge" style="background:var(--red)"></span>
         <span class="tag" style="background:var(--red)">Lycée · Première spécialité</span>
         <h3>Première spé</h3>
         <p>Second degré, dérivation, suites, trigonométrie, produit scalaire, exponentielle.</p>
-        <div class="meta"><span><b>13</b> chapitres</span><span><b>50+</b> vidéos</span><span><b>30+</b> PDF</span></div>
+        <div class="meta"><span><b>12</b> chapitres</span><span><b>5</b> en ligne</span></div>
         <span class="arrow">→</span>
       </a>
     </div>
   </div>
 </section>
 
-<section id="recentes" class="recent">
+<section id="ressources" style="padding-top:0">
+  <style>#ressources .levels{grid-template-columns:repeat(3,1fr)}@media(max-width:820px){#ressources .levels{grid-template-columns:1fr}}</style>
+  <div class="wrap">
+    <div class="sec-head"><h2>Ressources transversales</h2></div>
+    <p class="sec-sub">Des contenus qui traversent les chapitres : la programmation et la consolidation des acquis.</p>
+    <div class="levels">
+      <a href="cahiers-vacances.html" class="level">
+        <span class="edge" style="background:var(--green)"></span>
+        <span class="tag" style="background:var(--green)">Réviser</span>
+        <h3>Cahiers de vacances</h3>
+        <p>Cahiers de transition d'une année à l'autre, énoncés et corrigés.</p>
+        <span class="arrow">→</span>
+      </a>
+      <a href="automatismes.html" class="level">
+        <span class="edge" style="background:var(--red)"></span>
+        <span class="tag" style="background:var(--red)">S'entraîner</span>
+        <h3>Automatismes</h3>
+        <p>Vrai-Faux et QCM pour la Seconde et les épreuves anticipées de Première.</p>
+        <span class="arrow">→</span>
+      </a>
+      <a href="python.html" class="level">
+        <span class="edge" style="background:var(--orange)"></span>
+        <span class="tag" style="background:var(--orange)">Algorithmique</span>
+        <h3>Python</h3>
+        <p>Une progression en six séquences, Python comme outil de résolution de problèmes.</p>
+        <span class="arrow">→</span>
+      </a>
+    </div>
+  </div>
+</section>
   <div class="wrap">
     <div class="sec-head"><h2>Ajouts récents</h2><span class="count">mis à jour cette semaine</span></div>
     <p class="sec-sub">Les dernières animations publiées.</p>
@@ -220,7 +249,7 @@
       </div>
       <div>
         <h5>Niveaux</h5>
-        <a href="#">Seconde</a><a href="#">Première spécialité</a>
+        <a href="seconde.html">Seconde</a><a href="premiere.html">Première spécialité</a>
       </div>
       <div>
         <h5>Ressources</h5>
