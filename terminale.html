@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terminale spécialité — Mathématiques au lycée</title>
+<style>
+  :root{
+    --navy:#1F3864;--navy-deep:#16284a;--red:#A52A2A;--orange:#E07B00;--green:#2E7D32;
+    --ink:#23272e;--paper:#FBFAF7;--line:#dfe3ea;--grid:#e8ebf1;
+    --ok:#2E7D32;--soon:#9aa3b2;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;color:var(--ink);background:var(--paper);line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1060px;margin:0 auto;padding:0 24px}
+  .ui{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+  header{background:var(--navy);color:#fff;position:sticky;top:0;z-index:50;border-bottom:3px solid #E07B00}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:62px}
+  .brand{font-weight:700;font-size:1.16rem;display:flex;align-items:center;gap:10px}
+  .brand .mark{width:26px;height:26px;border-radius:5px;flex:none;
+    background:linear-gradient(var(--grid) 1px,transparent 1px) 0 0/7px 7px,linear-gradient(90deg,var(--grid) 1px,transparent 1px) 0 0/7px 7px,#fff;box-shadow:inset 0 0 0 2px #E07B00}
+  .nav a.ui{color:#cdd6e6;text-decoration:none;font-size:.94rem;margin-left:22px;font-weight:500}
+  .nav a.ui:hover{color:#fff}
+  .lhead{background:#fff;border-bottom:1px solid var(--line)}
+  .crumb{font-family:-apple-system,sans-serif;font-size:.86rem;color:#7a8392;padding-top:22px}
+  .crumb a{color:#E07B00;text-decoration:none;font-weight:600}
+  .crumb a:hover{text-decoration:underline}
+  .lhead-main{padding:14px 0 30px}
+  .lhead h1{font-size:2.4rem;color:var(--navy);font-weight:700;letter-spacing:-.01em;margin-bottom:8px}
+  .lhead .lead{color:#5c6470;font-size:1.06rem;max-width:60ch}
+  .lhead .prog{font-family:-apple-system,sans-serif;margin-top:16px;font-size:.88rem;color:#7a8392}
+  .lhead .prog b{color:#E07B00;font-weight:700}
+  .barwrap{margin-top:8px;height:7px;background:#eef1f5;border-radius:4px;overflow:hidden;max-width:340px}
+  .bar{height:100%;background:#E07B00;border-radius:4px;width:100%}
+  section{padding:40px 0 70px}
+  .chaplist{display:flex;flex-direction:column;gap:12px}
+  .chap{display:flex;align-items:stretch;gap:0;text-decoration:none;color:inherit;background:#fff;border:1px solid var(--line);border-radius:11px;overflow:hidden;transition:transform .13s,box-shadow .13s,border-color .13s}
+  .chap:hover{transform:translateX(4px);box-shadow:-5px 5px 0 rgba(31,56,100,.07);border-color:#c4cdde}
+  .cnum{font-family:-apple-system,sans-serif;flex:none;width:54px;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:1.12rem;letter-spacing:.02em}
+  .cmain{flex:1;padding:15px 20px}
+  .ctop{display:flex;align-items:center;gap:12px;margin-bottom:3px}
+  .ctop h3{font-size:1.18rem;color:var(--navy);font-weight:700}
+  .cbadge{font-family:-apple-system,sans-serif;font-size:.66rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#fff;padding:3px 9px;border-radius:20px}
+  .cmain p{color:#5c6470;font-size:.95rem}
+  .cgo{font-family:-apple-system,sans-serif;align-self:center;padding:0 24px;color:#c4cdde;font-size:1.5rem}
+  .chap:hover .cgo{color:#E07B00}
+  footer{background:var(--navy-deep);color:#8b97ad;padding:34px 0;font-family:-apple-system,sans-serif;font-size:.86rem;text-align:center}
+  footer a{color:#cdd6e6;text-decoration:none}
+  @media(max-width:820px){ .lhead h1{font-size:1.8rem} .ctop{flex-wrap:wrap;gap:6px} .nav a.ui{display:none} }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <div class="brand"><span class="mark"></span> Mathématiques&nbsp;·&nbsp;Lycée</div>
+    <div>
+      <a href="index.html" class="ui">Accueil</a>
+      <a href="seconde.html" class="ui">Seconde</a>
+      <a href="premiere.html" class="ui">Première spé</a>
+      <a href="terminale.html" class="ui">Terminale spé</a>
+    </div>
+  </div>
+</header>
+
+<div class="lhead">
+  <div class="wrap">
+    <div class="crumb"><a href="index.html">Accueil</a> &nbsp;›&nbsp; Terminale spé</div>
+    <div class="lhead-main">
+      <h1>Terminale spécialité</h1>
+      <p class="lead">Les quinze chapitres de l&#x27;année, dans l&#x27;ordre de la progression. Chaque chapitre réunit son cours et ses exercices.</p>
+      <div class="prog">Progression du lycée Schoelcher · <b>15</b> chapitre(s) en ligne sur 15</div>
+      <div class="barwrap"><div class="bar"></div></div>
+    </div>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="chaplist">
+      <a href="terminale-recurrence.html" class="chap">
+        <span class="cnum" style="background:#E07B00">01</span>
+        <div class="cmain">
+          <div class="ctop"><h3>Récurrence</h3><span class="cbadge" style="background:var(--ok)">Disponible</span></div>
+          <p>Raisonnement par récurrence, initialisation et hérédité</p>
+        </div>
+        <span class="cgo">→</span>
+      </a>
+      <a href="terminale-suites-et-limites.html" class="chap">
+        <span class="cnum" style="background:#E07B00">02</span>
+        <div class="cmain">
+          <div class="ctop"><h3>Suites et limites</h3><span class="cbadge" style="background:var(--ok)">Disponible</span></div>
+          <p>Limite d'une suite, opérations, théorèmes de comparaison</p>
+        </div>
+        <span class="cgo">→</span>
+      </a>
+      <a href="terminale-limites-de-fonctions.html" class="chap">
+        <span class="cnum" style="background:#E07B00">03</span>
+        <div class="cmain">
+          <div class="ctop"><h3>Limites de fonctions</h3><span class="cbadge" style="background:var(--ok)">Disponible</span></div>
+          <p>Limites en l'infini et en un point, asymptotes</p>
+        </div>
+        <span class="cgo">→</span>
+      </a>
+      <a href="terminale-espace-intersection.html" class="chap">
+        <span class="cnum" style="background:#E07B00">04</span>
+        <div class="cmain">
+          <div class="ctop"><h3>Espace — Intersection</h3><span class="cbadge" style="background:var(--ok)">Disponible</span></div>
+          <p>Droites et plans de l'espace, positions relatives</p>
+        </div>
+        <span class="cgo">→</span>
+      </a>
+      <a href="terminale-continuite.html" class="chap">
+        <span class="cnum" style="background:#E07B00">05</span>
+        <div class="cmain">
+          <div class="ctop"><h3>Continuité</h3><span class="cbadge" style="background:var(--ok)">Disponible</span></div>
+          <p>Continuité, théorème des valeurs intermédiaires</p>
+        </div>
+        <span class="cgo">→</span>
+      </a>
+      <a href="terminale-derivation.html" class="chap">
+        <span class="cnum" style="background:#E07B00">06</span>
+        <div class="cmain">
+          <div class="ctop"><h3>Dérivation</h3><span class="cbadge" style="background:var(--ok)">Disponible</span></div>
+          <p>Dérivées, composée, applications à l'étude de fonctions</p>
+        </div>
+        <span class="cgo">→</span>
+      </a>
+      <a href="terminale-orthogonalite-et-equations-cartesiennes.html" class="chap">
+        <span class="cnum" style="background:#E07B00">07</span>
+        <div class="cmain">
+          <div class="ctop"><h3>Orthogonalité et équations cartésiennes</h3><span class="cbadge" style="background:var(--ok)">Disponible</span></div>
+          <p>Produit scalaire dans l'espace, vecteur normal, équations</p>
+        </div>
+        <span class="cgo">→</span>
+      </a>
+      <a href="terminale-denombrement.html" class="chap">
+        <span class="cnum" style="background:#E07B00">08</span>
+        <div class="cmain">
+          <div class="ctop"><h3>Dénombrement</h3><span class="cbadge" style="background:var(--ok)">Disponible</span></div>
+          <p>Combinaisons, arrangements, coefficients binomiaux</p>
+        </div>
+        <span class="cgo">→</span>
+      </a>
+      <a href="terminale-convexite.html" class="chap">
+        <span class="cnum" style="background:#E07B00">09</span>
+        <div class="cmain">
+          <div class="ctop"><h3>Convexité</h3><span class="cbadge" style="background:var(--ok)">Disponible</span></div>
+          <p>Fonctions convexes, concaves, point d'inflexion</p>
+        </div>
+        <span class="cgo">→</span>
+      </a>
+      <a href="terminale-fonction-logarithme.html" class="chap">
+        <span class="cnum" style="background:#E07B00">10</span>
+        <div class="cmain">
+          <div class="ctop"><h3>Fonction logarithme</h3><span class="cbadge" style="background:var(--ok)">Disponible</span></div>
+          <p>Logarithme népérien, propriétés, étude de la fonction</p>
+        </div>
+        <span class="cgo">→</span>
+      </a>
+      <a href="terminale-fonctions-trigonometriques.html" class="chap">
+        <span class="cnum" style="background:#E07B00">11</span>
+        <div class="cmain">
+          <div class="ctop"><h3>Fonctions trigonométriques</h3><span class="cbadge" style="background:var(--ok)">Disponible</span></div>
+          <p>Fonctions sinus et cosinus, dérivées, étude</p>
+        </div>
+        <span class="cgo">→</span>
+      </a>
+      <a href="terminale-lois-discretes.html" class="chap">
+        <span class="cnum" style="background:#E07B00">12</span>
+        <div class="cmain">
+          <div class="ctop"><h3>Lois discrètes</h3><span class="cbadge" style="background:var(--ok)">Disponible</span></div>
+          <p>Loi binomiale, espérance, variance, échantillonnage</p>
+        </div>
+        <span class="cgo">→</span>
+      </a>
+      <a href="terminale-primitives-et-equations-differentielles.html" class="chap">
+        <span class="cnum" style="background:#E07B00">13</span>
+        <div class="cmain">
+          <div class="ctop"><h3>Primitives et équations différentielles</h3><span class="cbadge" style="background:var(--ok)">Disponible</span></div>
+          <p>Primitives, équations différentielles y' = ay + b</p>
+        </div>
+        <span class="cgo">→</span>
+      </a>
+      <a href="terminale-integrales.html" class="chap">
+        <span class="cnum" style="background:#E07B00">14</span>
+        <div class="cmain">
+          <div class="ctop"><h3>Intégrales</h3><span class="cbadge" style="background:var(--ok)">Disponible</span></div>
+          <p>Intégrale, aire sous la courbe, intégration par parties</p>
+        </div>
+        <span class="cgo">→</span>
+      </a>
+      <a href="terminale-lois-des-grands-nombres.html" class="chap">
+        <span class="cnum" style="background:#E07B00">15</span>
+        <div class="cmain">
+          <div class="ctop"><h3>Loi des grands nombres</h3><span class="cbadge" style="background:var(--ok)">Disponible</span></div>
+          <p>Inégalité de Bienaymé-Tchebychev, loi des grands nombres</p>
+        </div>
+        <span class="cgo">→</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">© 2026 · Mathématiques au lycée · <a href="index.html">Retour à l'accueil</a></div>
+</footer>
+</body>
+</html>
