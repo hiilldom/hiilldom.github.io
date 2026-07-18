@@ -4,11 +4,22 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Seconde — Mathématiques au lycée</title>
+<!-- ===== SEO & partage (auto) ===== -->
+<meta name="description" content="Tout le programme de maths de Seconde : calcul littéral, fonctions, vecteurs, droites et systèmes, statistiques et probabilités. Cours, TD et corrigés.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Mathématiques au lycée">
+<meta property="og:title" content="Seconde — Mathématiques au lycée">
+<meta property="og:description" content="Tout le programme de maths de Seconde : calcul littéral, fonctions, vecteurs, droites et systèmes, statistiques et probabilités. Cours, TD et corrigés.">
+<meta property="og:url" content="https://hiilldom.github.io/seconde.html">
+<meta property="og:image" content="https://hiilldom.github.io/og-image.png">
+<meta property="og:locale" content="fr_FR">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
 <style>
   :root{
-    --navy:#1F3864;--navy-deep:#16284a;--red:#A52A2A;--orange:#E07B00;--green:#2E7D32;
+    --navy:#122A52;--navy-deep:#0D1E3D;--red:#C51E28;--orange:#DE8018;--green:#1E8750;
     --ink:#23272e;--paper:#FBFAF7;--line:#dfe3ea;--grid:#e8ebf1;
-    --ok:#2E7D32;--soon:#9aa3b2;
+    --ok:#1E8750;--soon:#9aa3b2;
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth}
@@ -16,25 +27,25 @@
   .wrap{max-width:1060px;margin:0 auto;padding:0 24px}
   .ui{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
 
-  header{background:var(--navy);color:#fff;position:sticky;top:0;z-index:50;border-bottom:3px solid #2E7D32}
+  header{background:var(--navy);color:#fff;position:sticky;top:0;z-index:50;border-bottom:3px solid #1E8750}
   .nav{display:flex;align-items:center;justify-content:space-between;height:62px}
   .brand{font-weight:700;font-size:1.16rem;display:flex;align-items:center;gap:10px}
   .brand .mark{width:26px;height:26px;border-radius:5px;flex:none;
-    background:linear-gradient(var(--grid) 1px,transparent 1px) 0 0/7px 7px,linear-gradient(90deg,var(--grid) 1px,transparent 1px) 0 0/7px 7px,#fff;box-shadow:inset 0 0 0 2px #2E7D32}
+    background:linear-gradient(var(--grid) 1px,transparent 1px) 0 0/7px 7px,linear-gradient(90deg,var(--grid) 1px,transparent 1px) 0 0/7px 7px,#fff;box-shadow:inset 0 0 0 2px #1E8750}
   .nav a.ui{color:#cdd6e6;text-decoration:none;font-size:.94rem;margin-left:22px;font-weight:500}
   .nav a.ui:hover{color:#fff}
 
   .lhead{background:#fff;border-bottom:1px solid var(--line)}
   .crumb{font-family:-apple-system,sans-serif;font-size:.86rem;color:#7a8392;padding-top:22px}
-  .crumb a{color:#2E7D32;text-decoration:none;font-weight:600}
+  .crumb a{color:#1E8750;text-decoration:none;font-weight:600}
   .crumb a:hover{text-decoration:underline}
   .lhead-main{padding:14px 0 30px}
   .lhead h1{font-size:2.4rem;color:var(--navy);font-weight:700;letter-spacing:-.01em;margin-bottom:8px}
   .lhead .lead{color:#5c6470;font-size:1.06rem;max-width:60ch}
   .lhead .prog{font-family:-apple-system,sans-serif;margin-top:16px;font-size:.88rem;color:#7a8392}
-  .lhead .prog b{color:#2E7D32;font-weight:700}
+  .lhead .prog b{color:#1E8750;font-weight:700}
   .barwrap{margin-top:8px;height:7px;background:#eef1f5;border-radius:4px;overflow:hidden;max-width:340px}
-  .bar{height:100%;background:#2E7D32;border-radius:4px;width:100%}
+  .bar{height:100%;background:#1E8750;border-radius:4px;width:100%}
 
   section{padding:40px 0 70px}
   .chaplist{display:flex;flex-direction:column;gap:12px}
@@ -49,7 +60,7 @@
   .cbadge{font-family:-apple-system,sans-serif;font-size:.66rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#fff;padding:3px 9px;border-radius:20px}
   .cmain p{color:#5c6470;font-size:.95rem}
   .cgo{font-family:-apple-system,sans-serif;align-self:center;padding:0 24px;color:#c4cdde;font-size:1.5rem}
-  .chap:hover .cgo{color:#2E7D32}
+  .chap:hover .cgo{color:#1E8750}
 
   footer{background:var(--navy-deep);color:#8b97ad;padding:34px 0;font-family:-apple-system,sans-serif;font-size:.86rem;text-align:center}
   footer a{color:#cdd6e6;text-decoration:none}
@@ -91,7 +102,7 @@
   <div class="wrap">
     <div class="chaplist">
       <a href="seconde-calcul-litteral-1.html" class="chap">
-        <span class="cnum" style="background:#2E7D32">01</span>
+        <span class="cnum" style="background:#1E8750">01</span>
         <div class="cmain">
           <div class="ctop"><h3>Calcul littéral 1</h3><span class="cbadge" style="background:var(--ok)">Disponible</span></div>
           <p>Distributivité, identités remarquables, écriture fractionnaire</p>
@@ -99,7 +110,7 @@
         <span class="cgo">→</span>
       </a>
       <a href="seconde-nombres-calculs-1.html" class="chap">
-        <span class="cnum" style="background:#2E7D32">02</span>
+        <span class="cnum" style="background:#1E8750">02</span>
         <div class="cmain">
           <div class="ctop"><h3>Nombres et calculs 1</h3><span class="cbadge" style="background:var(--ok)">Disponible</span></div>
           <p>Puissances entières relatives, racine carrée</p>
@@ -107,7 +118,7 @@
         <span class="cgo">→</span>
       </a>
       <a href="seconde-nombres-calculs-2.html" class="chap">
-        <span class="cnum" style="background:#2E7D32">03</span>
+        <span class="cnum" style="background:#1E8750">03</span>
         <div class="cmain">
           <div class="ctop"><h3>Nombres et calculs 2</h3><span class="cbadge" style="background:var(--ok)">Disponible</span></div>
           <p>Ensembles de nombres, multiples, diviseurs, premiers</p>
@@ -115,7 +126,7 @@
         <span class="cgo">→</span>
       </a>
       <a href="seconde-intervalles.html" class="chap">
-        <span class="cnum" style="background:#2E7D32">04</span>
+        <span class="cnum" style="background:#1E8750">04</span>
         <div class="cmain">
           <div class="ctop"><h3>Nombres réels, Intervalles</h3><span class="cbadge" style="background:var(--ok)">Disponible</span></div>
           <p>Nombres réels, intervalles, comparaison, valeur absolue</p>
@@ -123,7 +134,7 @@
         <span class="cgo">→</span>
       </a>
       <a href="seconde-vecteurs-1.html" class="chap">
-        <span class="cnum" style="background:#2E7D32">05</span>
+        <span class="cnum" style="background:#1E8750">05</span>
         <div class="cmain">
           <div class="ctop"><h3>Vecteurs sans repère 1</h3><span class="cbadge" style="background:var(--ok)">Disponible</span></div>
           <p>Translations, vecteurs et parallélogramme</p>
@@ -131,7 +142,7 @@
         <span class="cgo">→</span>
       </a>
       <a href="seconde-calcul-litteral-2.html" class="chap">
-        <span class="cnum" style="background:#2E7D32">06</span>
+        <span class="cnum" style="background:#1E8750">06</span>
         <div class="cmain">
           <div class="ctop"><h3>Calcul littéral 2</h3><span class="cbadge" style="background:var(--ok)">Disponible</span></div>
           <p>Équation produit nul, équation quotient</p>
@@ -139,7 +150,7 @@
         <span class="cgo">→</span>
       </a>
       <a href="seconde-fonctions.html" class="chap">
-        <span class="cnum" style="background:#2E7D32">07</span>
+        <span class="cnum" style="background:#1E8750">07</span>
         <div class="cmain">
           <div class="ctop"><h3>Généralités sur les fonctions</h3><span class="cbadge" style="background:var(--ok)">Disponible</span></div>
           <p>Notion de fonction, courbe, résolutions graphiques</p>
@@ -147,7 +158,7 @@
         <span class="cgo">→</span>
       </a>
       <a href="seconde-vecteurs-2.html" class="chap">
-        <span class="cnum" style="background:#2E7D32">08</span>
+        <span class="cnum" style="background:#1E8750">08</span>
         <div class="cmain">
           <div class="ctop"><h3>Vecteurs sans repère 2</h3><span class="cbadge" style="background:var(--ok)">Disponible</span></div>
           <p>Somme, différence, produit par un réel, colinéarité</p>
@@ -155,7 +166,7 @@
         <span class="cgo">→</span>
       </a>
       <a href="seconde-fonctions-affines.html" class="chap">
-        <span class="cnum" style="background:#2E7D32">09</span>
+        <span class="cnum" style="background:#1E8750">09</span>
         <div class="cmain">
           <div class="ctop"><h3>Fonctions affines</h3><span class="cbadge" style="background:var(--ok)">Disponible</span></div>
           <p>Fonction affine, sens de variation, représentation</p>
@@ -163,7 +174,7 @@
         <span class="cgo">→</span>
       </a>
       <a href="seconde-fonctions-reference.html" class="chap">
-        <span class="cnum" style="background:#2E7D32">10</span>
+        <span class="cnum" style="background:#1E8750">10</span>
         <div class="cmain">
           <div class="ctop"><h3>Fonctions de référence</h3><span class="cbadge" style="background:var(--ok)">Disponible</span></div>
           <p>Exemples de fonctions de référence, parité</p>
@@ -171,7 +182,7 @@
         <span class="cgo">→</span>
       </a>
       <a href="seconde-signe-fonction.html" class="chap">
-        <span class="cnum" style="background:#2E7D32">11</span>
+        <span class="cnum" style="background:#1E8750">11</span>
         <div class="cmain">
           <div class="ctop"><h3>Signe d&#x27;une fonction</h3><span class="cbadge" style="background:var(--ok)">Disponible</span></div>
           <p>Signe d&#x27;une affine, d&#x27;un produit, d&#x27;un quotient, inéquations</p>
@@ -179,7 +190,7 @@
         <span class="cgo">→</span>
       </a>
       <a href="seconde-vecteurs-3.html" class="chap">
-        <span class="cnum" style="background:#2E7D32">12</span>
+        <span class="cnum" style="background:#1E8750">12</span>
         <div class="cmain">
           <div class="ctop"><h3>Vecteurs et repère</h3><span class="cbadge" style="background:var(--ok)">Disponible</span></div>
           <p>Base, repère, coordonnées, milieu, norme, colinéarité</p>
@@ -187,7 +198,7 @@
         <span class="cgo">→</span>
       </a>
       <a href="seconde-droites-systemes.html" class="chap">
-        <span class="cnum" style="background:#2E7D32">13</span>
+        <span class="cnum" style="background:#1E8750">13</span>
         <div class="cmain">
           <div class="ctop"><h3>Droites du plan et systèmes</h3><span class="cbadge" style="background:var(--ok)">Disponible</span></div>
           <p>Vecteur directeur, équations de droite, systèmes</p>
@@ -195,7 +206,7 @@
         <span class="cgo">→</span>
       </a>
       <a href="seconde-information-chiffree.html" class="chap">
-        <span class="cnum" style="background:#2E7D32">14</span>
+        <span class="cnum" style="background:#1E8750">14</span>
         <div class="cmain">
           <div class="ctop"><h3>Information chiffrée</h3><span class="cbadge" style="background:var(--ok)">Disponible</span></div>
           <p>Proportions, évolutions successives et réciproques</p>
@@ -203,7 +214,7 @@
         <span class="cgo">→</span>
       </a>
       <a href="seconde-variations.html" class="chap">
-        <span class="cnum" style="background:#2E7D32">15</span>
+        <span class="cnum" style="background:#1E8750">15</span>
         <div class="cmain">
           <div class="ctop"><h3>Variations et extremums</h3><span class="cbadge" style="background:var(--ok)">Disponible</span></div>
           <p>Variations, maximum, minimum, fonctions de référence</p>
@@ -211,7 +222,7 @@
         <span class="cgo">→</span>
       </a>
       <a href="seconde-statistiques.html" class="chap">
-        <span class="cnum" style="background:#2E7D32">16</span>
+        <span class="cnum" style="background:#1E8750">16</span>
         <div class="cmain">
           <div class="ctop"><h3>Statistiques descriptives</h3><span class="cbadge" style="background:var(--ok)">Disponible</span></div>
           <p>Moyenne, écart-type, quartiles, écart interquartile</p>
@@ -219,7 +230,7 @@
         <span class="cgo">→</span>
       </a>
       <a href="seconde-probabilites.html" class="chap">
-        <span class="cnum" style="background:#2E7D32">17</span>
+        <span class="cnum" style="background:#1E8750">17</span>
         <div class="cmain">
           <div class="ctop"><h3>Probabilités et échantillonnage</h3><span class="cbadge" style="background:var(--ok)">Disponible</span></div>
           <p>Loi de probabilité, événements, échantillon, simulation</p>

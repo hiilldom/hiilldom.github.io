@@ -4,11 +4,22 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Première spécialité — Mathématiques au lycée</title>
+<!-- ===== SEO & partage (auto) ===== -->
+<meta name="description" content="Maths de Première spécialité : second degré, dérivation, suites, exponentielle, produit scalaire, probabilités et variables aléatoires. Cours et corrigés.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Mathématiques au lycée">
+<meta property="og:title" content="Première spécialité — Mathématiques au lycée">
+<meta property="og:description" content="Maths de Première spécialité : second degré, dérivation, suites, exponentielle, produit scalaire, probabilités et variables aléatoires. Cours et corrigés.">
+<meta property="og:url" content="https://hiilldom.github.io/premiere.html">
+<meta property="og:image" content="https://hiilldom.github.io/og-image.png">
+<meta property="og:locale" content="fr_FR">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
 <style>
   :root{
-    --navy:#1F3864;--navy-deep:#16284a;--red:#A52A2A;--orange:#E07B00;--green:#2E7D32;
+    --navy:#122A52;--navy-deep:#0D1E3D;--red:#C51E28;--orange:#DE8018;--green:#1E8750;
     --ink:#23272e;--paper:#FBFAF7;--line:#dfe3ea;--grid:#e8ebf1;
-    --ok:#2E7D32;--soon:#9aa3b2;
+    --ok:#1E8750;--soon:#9aa3b2;
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth}
@@ -16,25 +27,25 @@
   .wrap{max-width:1060px;margin:0 auto;padding:0 24px}
   .ui{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
 
-  header{background:var(--navy);color:#fff;position:sticky;top:0;z-index:50;border-bottom:3px solid #A52A2A}
+  header{background:var(--navy);color:#fff;position:sticky;top:0;z-index:50;border-bottom:3px solid #C51E28}
   .nav{display:flex;align-items:center;justify-content:space-between;height:62px}
   .brand{font-weight:700;font-size:1.16rem;display:flex;align-items:center;gap:10px}
   .brand .mark{width:26px;height:26px;border-radius:5px;flex:none;
-    background:linear-gradient(var(--grid) 1px,transparent 1px) 0 0/7px 7px,linear-gradient(90deg,var(--grid) 1px,transparent 1px) 0 0/7px 7px,#fff;box-shadow:inset 0 0 0 2px #A52A2A}
+    background:linear-gradient(var(--grid) 1px,transparent 1px) 0 0/7px 7px,linear-gradient(90deg,var(--grid) 1px,transparent 1px) 0 0/7px 7px,#fff;box-shadow:inset 0 0 0 2px #C51E28}
   .nav a.ui{color:#cdd6e6;text-decoration:none;font-size:.94rem;margin-left:22px;font-weight:500}
   .nav a.ui:hover{color:#fff}
 
   .lhead{background:#fff;border-bottom:1px solid var(--line)}
   .crumb{font-family:-apple-system,sans-serif;font-size:.86rem;color:#7a8392;padding-top:22px}
-  .crumb a{color:#A52A2A;text-decoration:none;font-weight:600}
+  .crumb a{color:#C51E28;text-decoration:none;font-weight:600}
   .crumb a:hover{text-decoration:underline}
   .lhead-main{padding:14px 0 30px}
   .lhead h1{font-size:2.4rem;color:var(--navy);font-weight:700;letter-spacing:-.01em;margin-bottom:8px}
   .lhead .lead{color:#5c6470;font-size:1.06rem;max-width:60ch}
   .lhead .prog{font-family:-apple-system,sans-serif;margin-top:16px;font-size:.88rem;color:#7a8392}
-  .lhead .prog b{color:#A52A2A;font-weight:700}
+  .lhead .prog b{color:#C51E28;font-weight:700}
   .barwrap{margin-top:8px;height:7px;background:#eef1f5;border-radius:4px;overflow:hidden;max-width:340px}
-  .bar{height:100%;background:#A52A2A;border-radius:4px;width:100%}
+  .bar{height:100%;background:#C51E28;border-radius:4px;width:100%}
 
   section{padding:40px 0 70px}
   .chaplist{display:flex;flex-direction:column;gap:12px}
@@ -49,7 +60,7 @@
   .cbadge{font-family:-apple-system,sans-serif;font-size:.66rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#fff;padding:3px 9px;border-radius:20px}
   .cmain p{color:#5c6470;font-size:.95rem}
   .cgo{font-family:-apple-system,sans-serif;align-self:center;padding:0 24px;color:#c4cdde;font-size:1.5rem}
-  .chap:hover .cgo{color:#A52A2A}
+  .chap:hover .cgo{color:#C51E28}
 
   footer{background:var(--navy-deep);color:#8b97ad;padding:34px 0;font-family:-apple-system,sans-serif;font-size:.86rem;text-align:center}
   footer a{color:#cdd6e6;text-decoration:none}
@@ -91,7 +102,7 @@
   <div class="wrap">
     <div class="chaplist">
       <a href="premiere-second-degre-1.html" class="chap">
-        <span class="cnum" style="background:#A52A2A">01</span>
+        <span class="cnum" style="background:#C51E28">01</span>
         <div class="cmain">
           <div class="ctop"><h3>Second degré 1</h3><span class="cbadge" style="background:var(--ok)">Disponible</span></div>
           <p>Fonctions polynômes du second degré, forme canonique</p>
@@ -99,7 +110,7 @@
         <span class="cgo">→</span>
       </a>
       <a href="premiere-derivation-locale.html" class="chap">
-        <span class="cnum" style="background:#A52A2A">02</span>
+        <span class="cnum" style="background:#C51E28">02</span>
         <div class="cmain">
           <div class="ctop"><h3>Dérivation locale</h3><span class="cbadge" style="background:var(--ok)">Disponible</span></div>
           <p>Taux de variation, nombre dérivé en un point</p>
@@ -107,7 +118,7 @@
         <span class="cgo">→</span>
       </a>
       <a href="premiere-second-degre-2.html" class="chap">
-        <span class="cnum" style="background:#A52A2A">03</span>
+        <span class="cnum" style="background:#C51E28">03</span>
         <div class="cmain">
           <div class="ctop"><h3>Second degré 2</h3><span class="cbadge" style="background:var(--ok)">Disponible</span></div>
           <p>Factorisation, équation et signe du trinôme</p>
@@ -115,7 +126,7 @@
         <span class="cgo">→</span>
       </a>
       <a href="premiere-derivation-globale.html" class="chap">
-        <span class="cnum" style="background:#A52A2A">04</span>
+        <span class="cnum" style="background:#C51E28">04</span>
         <div class="cmain">
           <div class="ctop"><h3>Dérivation globale</h3><span class="cbadge" style="background:var(--ok)">Disponible</span></div>
           <p>Dérivabilité sur un intervalle, variations et courbes</p>
@@ -123,7 +134,7 @@
         <span class="cgo">→</span>
       </a>
       <a href="premiere-probabilites-conditionnelles.html" class="chap">
-        <span class="cnum" style="background:#A52A2A">05</span>
+        <span class="cnum" style="background:#C51E28">05</span>
         <div class="cmain">
           <div class="ctop"><h3>Probabilités conditionnelles</h3><span class="cbadge" style="background:var(--ok)">Disponible</span></div>
           <p>Probabilités conditionnelles, arbres pondérés, indépendance</p>
@@ -131,7 +142,7 @@
         <span class="cgo">→</span>
       </a>
       <a href="premiere-suites-1.html" class="chap">
-        <span class="cnum" style="background:#A52A2A">06</span>
+        <span class="cnum" style="background:#C51E28">06</span>
         <div class="cmain">
           <div class="ctop"><h3>Suites numériques 1</h3><span class="cbadge" style="background:var(--ok)">Disponible</span></div>
           <p>Génération, sens de variation, notion de limite</p>
@@ -139,7 +150,7 @@
         <span class="cgo">→</span>
       </a>
       <a href="premiere-trigonometrie.html" class="chap">
-        <span class="cnum" style="background:#A52A2A">07</span>
+        <span class="cnum" style="background:#C51E28">07</span>
         <div class="cmain">
           <div class="ctop"><h3>Fonctions trigonométriques</h3><span class="cbadge" style="background:var(--ok)">Disponible</span></div>
           <p>Cercle, enroulement, sinus et cosinus</p>
@@ -147,7 +158,7 @@
         <span class="cgo">→</span>
       </a>
       <a href="premiere-suites-2.html" class="chap">
-        <span class="cnum" style="background:#A52A2A">08</span>
+        <span class="cnum" style="background:#C51E28">08</span>
         <div class="cmain">
           <div class="ctop"><h3>Suites numériques 2</h3><span class="cbadge" style="background:var(--ok)">Disponible</span></div>
           <p>Suites arithmétiques et géométriques</p>
@@ -155,7 +166,7 @@
         <span class="cgo">→</span>
       </a>
       <a href="premiere-fonction-exponentielle.html" class="chap">
-        <span class="cnum" style="background:#A52A2A">09</span>
+        <span class="cnum" style="background:#C51E28">09</span>
         <div class="cmain">
           <div class="ctop"><h3>Fonction exponentielle</h3><span class="cbadge" style="background:var(--ok)">Disponible</span></div>
           <p>Définition, propriétés, étude de la fonction</p>
@@ -163,7 +174,7 @@
         <span class="cgo">→</span>
       </a>
       <a href="premiere-produit-scalaire.html" class="chap">
-        <span class="cnum" style="background:#A52A2A">10</span>
+        <span class="cnum" style="background:#C51E28">10</span>
         <div class="cmain">
           <div class="ctop"><h3>Produit scalaire</h3><span class="cbadge" style="background:var(--ok)">Disponible</span></div>
           <p>Produit scalaire, propriétés, applications</p>
@@ -171,7 +182,7 @@
         <span class="cgo">→</span>
       </a>
       <a href="premiere-geometrie-reperee.html" class="chap">
-        <span class="cnum" style="background:#A52A2A">11</span>
+        <span class="cnum" style="background:#C51E28">11</span>
         <div class="cmain">
           <div class="ctop"><h3>Géométrie repérée</h3><span class="cbadge" style="background:var(--ok)">Disponible</span></div>
           <p>Vecteur normal, équations de cercle et de parabole</p>
@@ -179,7 +190,7 @@
         <span class="cgo">→</span>
       </a>
       <a href="premiere-variables-aleatoires.html" class="chap">
-        <span class="cnum" style="background:#A52A2A">12</span>
+        <span class="cnum" style="background:#C51E28">12</span>
         <div class="cmain">
           <div class="ctop"><h3>Variables aléatoires</h3><span class="cbadge" style="background:var(--ok)">Disponible</span></div>
           <p>Variable aléatoire finie, espérance, variance</p>
